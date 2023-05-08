@@ -1,5 +1,8 @@
 package com.vocabully;
 
+//Added for react-native-screens
+import android.os.Bundle;
+
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
@@ -32,4 +35,10 @@ public class MainActivity extends ReactActivity {
         DefaultNewArchitectureEntryPoint.getConcurrentReactEnabled() // concurrentRootEnabled
         );
   }
+
+  //Added for react-native-screens
+  @Override
+    protected void onCreate(Bundle savedInstanceState) {
+      super.onCreate(null);
+    }
 }
